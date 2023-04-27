@@ -1,0 +1,569 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    text-align: left;
+}
+
+.main_container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu_container {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #282A30;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.menu_container ul li {
+    width: 300px;
+    background: #36383F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.menu_container ul li:hover {
+    width: 300px;
+    background: #17497B;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.menu_container ul li.active {
+    width: 300px;
+    background: #4381C0;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.menu_logo {
+    margin-top: 20px;
+}
+
+.menu_app_label {
+    margin-bottom: 20px;
+}
+
+.admin_label {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 800px;
+}
+
+.content_container{
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.data_table {
+    border-collapse: collapse;
+    margin-right: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    clear: both;
+}
+
+td, th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.data_th {
+    background: #4381C0;
+    color: #FFFFFF;
+}
+
+.data_tr:nth-child(even) {
+    background-color: #E3E7ED;
+}
+
+input, .input_box {
+    border: 2px solid #8C96A8;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search_box {
+    width: 200px;
+}
+
+button {
+    background: #282A30;
+    border-style: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background: #4381C0;
+    border-style: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.table_label {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4381C0;
+    float: left;
+}
+
+.search_bar {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    clear: both;
+}
+
+.background_container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("graphics/mall_background.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay_container {
+    width: 100%;
+    height: 100%;
+    background: rgba(67, 129, 192, 0.7);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_form {
+    width: 500px;
+    height: 550px;
+    background-color: #282A30;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.app_name {
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    font-size: 60px;
+}
+
+.login_header {
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.login_label {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.login_logo {
+    margin-top: 30px;
+}
+
+.login_input {
+    width: 300px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.input_group {
+    margin-top: 10px;
+}
+
+button.login_button {
+    background: #4381C0;
+    margin-top: 20px;
+    width: 100px;
+}
+
+.add_form {
+    width: 500px;
+    height: 550px;
+    background-color: #FFFFFF;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.add_form_expense {
+    width: 500px;
+    height: 575px;
+    background-color: #FFFFFF;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.close {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.add_header {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.add_input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.add_button {
+    margin-top: 40px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.edit_button {
+    margin-top: 10px;
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.change_button {
+    margin-top: 10px;
+    width: 200px;
+    font-size: 16px;
+}
+
+select {
+    border: 2px solid #8C96A8;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.delete_button {
+    background-color: #282A30;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+
+.delete_button:hover {
+    background-color: #4381C0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+
+.delete_form {
+    width: 500px;
+    height: 230px;
+    background-color: #FFFFFF;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.delete_form_expense {
+    width: 550px;
+    height: 230px;
+    background-color: #FFFFFF;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.delete_form_goal {
+    width: 600px;
+    height: 230px;
+    background-color: #FFFFFF;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.delete_form_payment {
+    width: 750px;
+    height: 230px;
+    background-color: #FFFFFF;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.delete_header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.delete_dialog {
+    margin-bottom: 40px;
+}
+
+.alert {
+    background: #69acef;
+    padding: 10px 30px;
+    min-width: 300px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid #4381C0;
+    overflow: hidden;
+}
+
+.alert.show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.alert.hide {
+    animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+    0% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.alert .alert_icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.alert .msg {
+    padding: 0 20px;
+    font-size: 14px;
+    color: #282A30;
+}
+
+.alert .close-btn {
+    background: #69acef;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: #4381C0;
+}
+
+.icon_database {
+    margin-left: 50px;
+    margin-right: 5px;
+}
+
+.home, .logout, .logs {
+    text-align: center;
+}
+
+.home_label {
+    color: #282A30;
+    font-size: 30px;
+}
+
+.info_text {
+    color: #4381C0;
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 600;
+    float: left;
+}
+
+.info_graphlabel {
+    color: #4381C0;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    clear: both;
+}
+
+.info_graphlabel2 {
+    color: #4381C0;
+    font-size: 20px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    clear: both;
+}
+
+.info_data {
+    color: #4381C0;
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-left: 10px;
+    float: left;
+}
+
+.info_icon {
+    float: left;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.chart-container {
+    width: 70%;
+    margin-left: 50px;
+}
+
+.chart-container-pie {
+    width: 300px;
+}
+
+.chart-container-dues {
+    width: 70%;
+}
+
+.chart-container-debts {
+    width: 300px;
+}
+
+.users_content {
+    width: 30%;
+    float: left;
+}
+
+.expenses_content {
+    width: 70%;
+    float: left;
+}
+
+.dues_content {
+    width: 70%;
+    float: left;
+}
+
+.debts_content {
+    width: 30%;
+    float: left;
+}
+
+.report_top_content {
+    width: 100%;
+    display: block;
+}
+
+.report_bottom_content {
+    width: 100%;
+    display: block;
+}
+
+.report_data {
+    text-align: left;
+    vertical-align: top;
+}
+
+.report_table {
+    width: 90%;
+}
+
+.pie_chart {
+    width: 350px;
+}
+
+.archive_button {
+    background-color: #282A30;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 65px;
+    border-radius: 20px;
+    clear: both;
+    position: absolute;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.archive_button_active {
+    background-color: #4381C0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 65px;
+    border-radius: 20px;
+    clear: both;
+    position: absolute;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.tables_header {
+    margin-bottom: 20px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
